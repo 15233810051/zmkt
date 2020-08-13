@@ -20,14 +20,20 @@
     <script>
         var deviceWidth = document.documentElement.clientWidth;
     if(deviceWidth>750){}else{
-        $(window).on("orientationchange",function(){
-            if (window.orientation == 90 || window.orientation == -90) {
-                alert('现在是横屏, 请切换到竖屏以获得最佳浏览体验！');
-            }else if(window.orientation == 180 || window.orientation == 0) {
-                alert('现在是竖屏, 浏览效果最佳！');
-            }
-        });
+        if (window.orientation == 90 || window.orientation == -90) {
+        }else if(window.orientation == 180 || window.orientation == 0) {
+            alert('现在是竖屏, 请切换到横屏以获得最佳浏览体验！');
+            $(window).on("orientationchange",function(){
+                if (window.orientation == 90 || window.orientation == -90) {
+                    alert('1');
+                }else if(window.orientation == 180 || window.orientation == 0) {
+                    alert('现在是竖屏, 请切换到横屏以获得最佳浏览体验！！');
+                }
+            });
+        }
+       
     }
     </script>
 </body>
 </html>
+
