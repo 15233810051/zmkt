@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- meta使用viewport以确保页面可自由缩放 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 引入 jQuery Mobile 样式 -->
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- 引入 jQuery 库 -->
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- 引入 jQuery Mobile 库 -->
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <style>
+        @-webkit-keyframes rotation{
+            10%{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(0);
+                -webkit-transform: rotate(0);
+            }
+            60% {
+                transform: rotate(0);
+                -webkit-transform: rotate(0);
+            }
+            90% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+        @keyframes rotation{
+            10%{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(0);
+                -webkit-transform: rotate(0);
+            }
+            60% {
+                transform: rotate(0);
+                -webkit-transform: rotate(0);
+            }
+            90% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+        .layertip {
+            /* display: none; */
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            position: fixed;
+            background: #000;
+            z-index: 9999;
+            left: 0;
+        }
+        .layercontent {
+            position: absolute;
+            width: 100%;
+            top: 45%;
+            margin-top: -75px;
+            text-align: center;
+        }
+        .layertip i {
+            width: 73px;
+            height: 128px;
+            background: url(http://p2.img.cctvpic.com/photoAlbum/templet/common/DEPA1561703387280973/iphoneheng.png) left center no-repeat scroll;
+            background-size: 100% auto;
+            display: inline-block;
+            -webkit-animation: rotation infinite 1.5s ease-in-out;
+            animation: rotation infinite 1.5s ease-in-out;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        .layertip .txttip {
+            margin-top: 20px;
+            font-size: 17px;
+            color: #1daae8;
+            text-shadow: 0 0px 0 #f3f3f3;
+        }
+    </style>
+    <div id="orientLayer" class="layertip">
+        <div class="layercontent">
+            <i class="pt-page-rotatePushLeft"></i>
+            <div class="txttip">为了更好的体验，请使用横屏浏览</div>
+        </div>
+    </div>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+    if(deviceWidth>750){$('#orientLayer').hide()}else{
+        if (window.orientation == 90 || window.orientation == -90) {
+           // 此为横屏 
+            $('#orientLayer').hide();
+            $(window).on("orientationchange",function(){
+                if (window.orientation == 90 || window.orientation == -90) {
+                    $('#orientLayer').hide();
+                }else if(window.orientation == 180 || window.orientation == 0) {
+                    $('#orientLayer').show();
+                }
+            }); 
+            // 下为横屏效果
+        }else if(window.orientation == 180 || window.orientation == 0) {
+            // 此为竖屏 
+            $('#orientLayer').show();
+            $(window).on("orientationchange",function(){
+                if (window.orientation == 90 || window.orientation == -90) {
+                    $('#orientLayer').hide();
+                }else if(window.orientation == 180 || window.orientation == 0) {
+                    $('#orientLayer').show();
+                }
+            });
+        }
+       
+    }
+    </script>
+</body>
+</html>

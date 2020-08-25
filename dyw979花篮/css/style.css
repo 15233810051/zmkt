@@ -1,0 +1,371 @@
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+}
+body {
+    background:#fff none;
+    color:#333;
+    font-size:12px;
+    font-style:normal;
+    font-weight:normal;
+    font-family:"宋体";
+    background-color:#fff;
+    margin-top:0;
+    background-repeat:repeat-x;
+	height:100%;
+}
+html {
+    font-size: 100%;
+}
+em, b, i {
+    font-style:normal;
+}
+p {
+    line-height:1.25em;
+}
+a {
+    color:#000;
+    text-decoration:none;
+}
+a:link, a:visited {
+}
+a:hover, a:active {
+    text-decoration:underline;
+}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover {
+    text-decoration:none;
+}
+img, a img {
+    border:0 none;
+}
+ul, ol {
+    list-style-type:none;
+}
+ul:after, ol:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+.vspace {
+    height:10px;
+    font-size:0px;
+    line-height:0px;
+    width:99%;
+    clear:both;
+    overflow:hidden;
+}
+body .l, body .left {
+    float:left;
+    clear:none;
+}
+body .r, body .right {
+    float:right;
+    clear:none;
+}
+body .c, body .c {
+    text-align:center;
+}
+.clear_float, .clear {
+    clear:both;
+    font-size:1px;
+    line-height:1px;
+    height:1px;
+    overflow:hidden;
+}
+.column_wrapper {
+    clear:both;
+    margin:0 auto;
+    text-align:left;
+    width:960px;
+}
+.column_wrapper:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+.column_wrapper_1200 {
+    clear:both;
+    margin:0 auto;
+    text-align:left;
+    width:960px;
+}
+.column_wrapper_1200:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+/*底通*/
+#dyw817_page_bottom .copyright {
+    color: #666;
+    font-family: "宋体";
+    font-size: 12px;
+    height: 83px;
+    line-height: 83px;
+    background: #f1f1f1;
+	overflow: hidden;
+	border-top: 4px solid #eabc9b;
+}
+#dyw817_page_bottom .copyright .main {
+    margin: 0 auto;
+    width: 1200px;
+}
+#dyw817_page_bottom .copyright .main .left{width: 50%;float: left;text-align: center;}
+#dyw817_page_bottom .copyright .main .right{width: 24%;float: left;text-align: right;}
+#dyw817_page_bottom .copyright a {
+    color: #666;
+}
+body .l, body .left {
+    float: left;
+    clear: none;
+}
+body .r, body .right {
+    float: right;
+    clear: none;
+}
+/*底通结束*/
+/*初始化结束*/
+
+input{
+    outline: none
+}
+a:hover{text-decoration: none}
+/* 背景 */
+.bg_top_owner{
+    background:url(img/dyw979_bg_1.jpg) no-repeat top center;
+}
+/* 主体 */
+.dyw979_hl{
+    width: 1333px;
+    height: 750px;
+    margin:0 auto;
+}
+/* button */
+.dyw979_hl .but{
+    display: block;
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    margin:0 auto 0;
+    background:url(img/dyw979_but.png) no-repeat center center;
+    background-size: 98%;
+    position: relative;
+    top: 234px;
+}
+/* 交互 */
+.dyw979_hl .dyw979_jh{
+    display: none;
+}
+.dyw979_hl .dyw979_jh .zd{
+    width: 194px;
+    height: 194px;
+    margin:0 auto 0;
+    background:url(img/dyw979_zd.png) no-repeat center center;
+    position: relative;
+    top: 100px;
+}
+.dyw979_hl .dyw979_jh .lj{
+    height: 170px;
+    width: 14px;
+    margin:0 auto;
+    background:url(img/dyw979_lj.png) no-repeat center center;
+    position: relative;
+    top: 100px;
+}
+.dyw979_hl .dyw979_jh .hl{
+    height: 230px;
+    width: 147px;
+    margin: 0 auto;
+    background:url(img/dyw979_hl.png) no-repeat center center;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+}
+/* 弹窗 */
+.dyw979_tc{
+    display: none;
+    width: 1333px;
+    height: 752px;
+    background: url(img/dyw979_tc.png);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    padding-top: 126px;
+}
+.dyw979_tc .tc{
+    width: 430px;
+    margin:0 auto;
+    height: 430px;
+    padding:40px 45px 40px 415px;
+    background: url(img/dyw979_nr.jpg) no-repeat;
+    background-size: 100%;
+    /* margin-left: 300px; */
+    border-radius: 20px;
+}
+.dyw979_tc .tc p{
+    color:#fff;
+    font: 38px '微软雅黑';
+    line-height: 72px;
+    height: 240px;
+}
+.dyw979_tc .tc a{
+    display: block;
+    width: 360px;
+    height: 66px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+	img { max-width: 100%; height: auto; width: auto\9;/*ie8*/}
+	img, object { max-width: 100%;}
+	a:active{ color:#D90000;}
+	.top_x_xq7587{display: none;}/*顶部导航隐藏*/	
+	#page_bottom .copyright{display: none;}/*底通隐藏*/
+	.vspace{height: 0rem !important;}
+	.column_wrapper_1200{width: 100%;}
+	.column_wrapper{width: 100%;}
+	.sub_638{width: 100%;float: none;}
+	.sub_315{width: 100%;float: none;}
+	.vspace_jj{display: none !important;}
+	.col_w960{width: 100%;float: none;}
+	/*底通*/
+	#dyw817_page_bottom .copyright{width: 100%;font-family: "Ping Hei";font-size: 0.32rem;color: #333333;height: auto;line-height: 0.32rem;border-top: 0;background: #f0f0f0;}
+	#dyw817_page_bottom .copyright .main{width: 100%;}
+	#_ideConac{display: none;}
+	#dyw817_page_bottom .copyright .main .left{width: 100%;padding: 0.46rem 0;}
+	#dyw817_page_bottom .copyright .main .right{width: 100%;padding: 0.2rem 0 0.4rem 0;text-align: center;}
+	#dyw817_page_bottom .copyright .main .right span{width: 40%;margin: 0 auto;display: block;line-height: 0.4rem;font-size: 0.24rem;}
+	.dy_top_dyw595{display: none;}
+
+
+	/*移动视频通用*/
+	embed{ width: 100%;height: auto;}
+	.video_dyw407{height:auto !important;}
+	#myFlashContainer {background: #000000; _background: #000000;}
+	#myFlash { height: auto !important;}
+	#myFlash video {width: 100%; height: auto !important;}
+	#html5Player {position: static !important;width:100% !important;height: auto !important;}
+	#html5VideoBack{width:100% !important;height: auto !important;}
+	#html5ControlDiv{width:100% !important;height: auto !important;}
+	#_video_player_box{width: 100% !important;height: auto !important;}
+    #dyw817_page_bottom{
+        display: none
+    }
+
+
+
+
+
+
+    /* 背景 */
+.bg_top_owner{
+    background:url(img/dyw979_bg_1.jpg) no-repeat top center;
+    background-size: 100%;
+}
+/* 主体 */
+.dyw979_hl{
+    width:13.34rem;
+    height:7.5rem;
+    /* 2222 */
+    margin:0 auto;
+}
+/* button */
+.dyw979_hl .but{
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    margin:0 auto 0;
+    background:url(img/dyw979_but.png) no-repeat center center;
+    background-size: 98%;
+    position: relative;
+    top: 2.34rem
+}
+/* 交互 */
+.dyw979_hl .dyw979_jh{
+    display: none;
+}
+.dyw979_hl .dyw979_jh .zd{
+    width: 1.94rem;
+    height: 1.94rem;
+    margin:0 auto 0;
+    background:url(img/dyw979_zd.png) no-repeat center center;
+    background-size: 100%;
+    position: relative;
+    top: 1rem;
+}
+.dyw979_hl .dyw979_jh .lj{
+    height: 1.7rem;
+    width: .14rem;
+    margin:0 auto;
+    background:url(img/dyw979_lj.png) no-repeat center center;
+    background-size: 100%;
+    position: relative;
+    top: 1rem;
+}
+.dyw979_hl .dyw979_jh .hl{
+    height:2.3rem;
+    width: 1.47rem;
+    margin: 0 auto;
+    background:url(img/dyw979_hl.png) no-repeat center center;
+    background-size: 100%;
+    position: relative;
+    top: 1rem;
+    cursor: pointer;
+}
+/* 弹窗 */
+.dyw979_tc{
+    display: none;
+    width:13.33rem;
+    height: 7.52rem;
+    background: url(img/dyw979_tc.png);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    padding-top: 1.26rem;
+}
+.dyw979_tc .tc{
+    width: 4.3rem;
+    margin:0 auto;
+    height: 4.3rem;
+    padding:.4rem .45rem .4rem 4.15rem;
+    background: url(img/dyw979_nr.jpg) no-repeat;
+    background-size: 100%;
+    /* margin-left: 300px; */
+    border-radius: .2rem;
+}
+.dyw979_tc .tc p{
+    color:#fff;
+    font: .38rem '微软雅黑';
+    line-height: .72rem;
+    height:2.4rem;
+}
+.dyw979_tc .tc a{
+    display: block;
+    width: 3.6rem;
+    height: .66rem;
+    margin-top: .25rem;
+}
+}
