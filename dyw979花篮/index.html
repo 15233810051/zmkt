@@ -814,6 +814,7 @@ function SetHome(url){
             location.reload();
         })
     }else{
+	    $('.bg_top_owner').css('height',$(document).height()+'px')
         $('.dyw979_hl .but').on('click',function(e){
             e.preventDefault();
             $(this).hide();
