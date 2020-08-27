@@ -17,8 +17,8 @@
 <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript">
 	  var deviceWidth = document.documentElement.clientWidth;
-	  if(deviceWidth>750){
-		document.documentElement.style.fontSize=750/7.50+"px";
+	  if(deviceWidth>900){
+		document.documentElement.style.fontSize=900/7.50+"px";
 	  }else{
 		document.documentElement.style.fontSize=deviceWidth/13.34+"px";
 	  }
@@ -732,7 +732,7 @@ function SetHome(url){
                             </div>
                         </div>
                         <script>
-                        if(deviceWidth>750){$('#orientLayer').hide()}else{
+                        if(deviceWidth>900){$('#orientLayer').hide()}else{
                             if (window.orientation == 90 || window.orientation == -90) {
                                // 此为横屏 
                                 $('#orientLayer').hide();
@@ -779,7 +779,7 @@ function SetHome(url){
 </div>
 <!-- 点击 -->
 <script>
-    if(deviceWidth>750){
+    if(deviceWidth>990){
         $('.dyw979_hl .but').on('click',function(e){
             e.preventDefault();
             $(this).hide();
