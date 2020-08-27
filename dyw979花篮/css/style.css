@@ -148,40 +148,40 @@ a:hover{text-decoration: none}
 /* 主体 */
 .dyw979_hl{
     width: 1333px;
-    height: 750px;
+    height:636px;
     margin:0 auto;
 }
 /* button */
 .dyw979_hl .but{
     display: block;
-    width: 184px;
-    height: 184px;
+    width: 178px;
+    height: 178px;
     border-radius: 50%;
     margin:0 auto 0;
     background:url(img/dyw979_but.png) no-repeat center center;
     background-size: 98%;
     position: relative;
-    top: 234px;
+    top: 130px;
 }
 /* 交互 */
 .dyw979_hl .dyw979_jh{
     display: none;
 }
 .dyw979_hl .dyw979_jh .zd{
-    width: 194px;
-    height: 194px;
+    width: 190px;
+    height: 190px;
     margin:0 auto 0;
     background:url(img/dyw979_zd.png) no-repeat center center;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 .dyw979_hl .dyw979_jh .lj{
-    height: 170px;
+    height: 110px;
     width: 14px;
     margin:0 auto;
     background:url(img/dyw979_lj.png) no-repeat center center;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 .dyw979_hl .dyw979_jh .hl{
     height: 230px;
@@ -189,19 +189,19 @@ a:hover{text-decoration: none}
     margin: 0 auto;
     background:url(img/dyw979_hl.png) no-repeat center center;
     position: relative;
-    top: 100px;
+    top: 50px;
     cursor: pointer;
 }
 /* 弹窗 */
 .dyw979_tc{
     display: none;
     width: 1333px;
-    height: 752px;
+    height: 656px;
     background: url(img/dyw979_tc.png);
     position: absolute;
     top: 0;
     z-index: 1000;
-    padding-top: 126px;
+    padding-top: 108px;
 }
 .dyw979_tc .tc{
     width: 430px;
@@ -279,6 +279,9 @@ a:hover{text-decoration: none}
 
 
     /* 背景 */
+    html{
+        overflow: hidden;
+    }
 .bg_top_owner{
     background:url(img/dyw979_bg_1.jpg) no-repeat top center;
     background-size: 100%;
@@ -286,7 +289,7 @@ a:hover{text-decoration: none}
 /* 主体 */
 .dyw979_hl{
     width:13.34rem;
-    height:7.5rem;
+    height:6.36rem;
     /* 2222 */
     margin:0 auto;
 }
@@ -307,22 +310,22 @@ a:hover{text-decoration: none}
     display: none;
 }
 .dyw979_hl .dyw979_jh .zd{
-    width: 1.94rem;
-    height: 1.94rem;
+    width: 1.78rem;
+    height: 1.78rem;
     margin:0 auto 0;
     background:url(img/dyw979_zd.png) no-repeat center center;
     background-size: 100%;
     position: relative;
-    top: 1rem;
+    top: 0.5rem;
 }
 .dyw979_hl .dyw979_jh .lj{
-    height: 1.7rem;
-    width: .14rem;
+    height: 1.1rem;
+    width: .11rem;
     margin:0 auto;
     background:url(img/dyw979_lj.png) no-repeat center center;
     background-size: 100%;
     position: relative;
-    top: 1rem;
+    top: 0.5rem;
 }
 .dyw979_hl .dyw979_jh .hl{
     height:2.3rem;
@@ -338,13 +341,13 @@ a:hover{text-decoration: none}
 .dyw979_tc{
     display: none;
     width:13.33rem;
-    height: 7.52rem;
+    height:6.56rem;
     background: url(img/dyw979_tc.png);
     background-size: 100%;
     position: absolute;
     top: 0;
     z-index: 1000;
-    padding-top: 1.26rem;
+    padding-top: .66rem;
 }
 .dyw979_tc .tc{
     width: 4.3rem;

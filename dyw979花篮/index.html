@@ -789,11 +789,11 @@ function SetHome(url){
         // 移动花篮
         $('.dyw979_hl .dyw979_jh .hl').on('mousedown',function(e){
             e.preventDefault();
-            var dyw980_y=e.screenY-100;
+            var dyw980_y=e.screenY-50;
             $('.dyw979_hl .dyw979_jh .lj').css('width','0');
             $(document).on('mousemove','.dyw979_jh',function(e){
                 e.preventDefault();
-                if(e.screenY-dyw980_y<100&&e.screenY-dyw980_y>-340){
+                if(e.screenY-dyw980_y<50&&e.screenY-dyw980_y>-290){
                     $('.dyw979_hl .dyw979_jh .hl').css('top',e.screenY-dyw980_y+'px')
                 }
             })
@@ -802,10 +802,10 @@ function SetHome(url){
             e.preventDefault();
             $('.dyw979_hl .dyw979_jh .lj').css('width','14px');
             $(document).off('mousemove','.dyw979_jh' )
-            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-338 && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-190){
+            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-300 && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-190){
                 $('.dyw979_tc').show()
             }else{
-                $('.dyw979_hl .dyw979_jh .hl').css('top','100px')
+                $('.dyw979_hl .dyw979_jh .hl').css('top','50px')
             }
         })
         // 返回 查看
@@ -838,10 +838,10 @@ function SetHome(url){
         // 移动花篮
         $('.dyw979_hl .dyw979_jh').on('vmousedown',function(e){
             // e.preventDefault();
-            var dyw980_y=e.screenY-100,dyw980_ydy=parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'));
+            var dyw980_y=e.screenY-50,dyw980_ydy=parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'));
             $('.dyw979_hl .dyw979_jh .lj').css('width','0');
             $(document).on('vmousemove','.dyw979_jh',function(e){
-            console.log(1,dyw980_ydy);
+            // console.log(1,dyw980_ydy);
                 // e.preventDefault();
                 if(e.screenY-dyw980_y<dyw980_ydy&&e.screenY-dyw980_y>-$('.dyw979_hl .dyw979_jh .lj').height()*0.8-$('.dyw979_hl .dyw979_jh .zd').height()){
                     $('.dyw979_hl .dyw979_jh .hl').css('top',e.screenY-dyw980_y+'px')
@@ -850,12 +850,12 @@ function SetHome(url){
         })
         $('.dyw979_hl').on('vmouseup',function(e){
             // e.preventDefault();
-            $('.dyw979_hl .dyw979_jh .lj').css('width','0.14rem');
+            $('.dyw979_hl .dyw979_jh .lj').css('width','0.11rem');
             $(document).off('mousemove','.dyw979_jh' )
             if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-$('.dyw979_hl .dyw979_jh .lj').height()-$('.dyw979_hl .dyw979_jh .zd').height() && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-$('.dyw979_hl .dyw979_jh .lj').height()){
                 $('.dyw979_tc').show()
             }else{
-                $('.dyw979_hl .dyw979_jh .hl').css('top','1rem')
+                $('.dyw979_hl .dyw979_jh .hl').css('top','0.7rem')
             }
         })
         // 返回 查看
