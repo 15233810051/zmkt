@@ -732,31 +732,31 @@ function SetHome(url){
                             </div>
                         </div>
                         <script>
-                        // if(deviceWidth>900){$('#orientLayer').hide()}else{
-                        //     if (window.orientation == 90 || window.orientation == -90) {
-                        //        // 此为横屏 
-                                $('#orientLayer').hide();
-                        //         $(window).on("orientationchange",function(){
-                        //             if (window.orientation == 90 || window.orientation == -90) {
-                        //                 $('#orientLayer').hide();
-                        //             }else if(window.orientation == 180 || window.orientation == 0) {
-                        //                 $('#orientLayer').show();
-                        //             }
-                        //         }); 
-                        //         // 下为横屏效果
-                        //     }else if(window.orientation == 180 || window.orientation == 0) {
-                        //         // 此为竖屏 
-                        //         $('#orientLayer').show();
-                        //         $(window).on("orientationchange",function(){
-                        //             if (window.orientation == 90 || window.orientation == -90) {
-                        //                 $('#orientLayer').hide();
-                        //             }else if(window.orientation == 180 || window.orientation == 0) {
-                        //                 $('#orientLayer').show();
-                        //             }
-                        //         });
-                        //     }
+                        if(deviceWidth>900){$('#orientLayer').hide()}else{
+                            if (window.orientation == 90 || window.orientation == -90) {
+                               // 此为横屏 
+                               $('#orientLayer').hide();
+                                $(window).on("orientationchange",function(){
+                                    if (window.orientation == 90 || window.orientation == -90) {
+                                        $('#orientLayer').hide();
+                                    }else if(window.orientation == 180 || window.orientation == 0) {
+                                        $('#orientLayer').show();
+                                    }
+                                }); 
+                                // 下为横屏效果
+                            }else if(window.orientation == 180 || window.orientation == 0) {
+                                // 此为竖屏 
+                                $('#orientLayer').show();
+                                $(window).on("orientationchange",function(){
+                                    if (window.orientation == 90 || window.orientation == -90) {
+                                        $('#orientLayer').hide();
+                                    }else if(window.orientation == 180 || window.orientation == 0) {
+                                        $('#orientLayer').show();
+                                    }
+                                });
+                            }
                            
-                        // }
+                        }
                         </script>
 <!-- 内容 -->
 <div class="dyw979_hl">
