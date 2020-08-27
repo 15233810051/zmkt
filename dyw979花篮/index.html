@@ -732,31 +732,31 @@ function SetHome(url){
                             </div>
                         </div>
                         <script>
-                        if(deviceWidth>900){$('#orientLayer').hide()}else{
-                            if (window.orientation == 90 || window.orientation == -90) {
-                               // 此为横屏 
+                        // if(deviceWidth>900){$('#orientLayer').hide()}else{
+                        //     if (window.orientation == 90 || window.orientation == -90) {
+                        //        // 此为横屏 
                                 $('#orientLayer').hide();
-                                $(window).on("orientationchange",function(){
-                                    if (window.orientation == 90 || window.orientation == -90) {
-                                        $('#orientLayer').hide();
-                                    }else if(window.orientation == 180 || window.orientation == 0) {
-                                        $('#orientLayer').show();
-                                    }
-                                }); 
-                                // 下为横屏效果
-                            }else if(window.orientation == 180 || window.orientation == 0) {
-                                // 此为竖屏 
-                                $('#orientLayer').show();
-                                $(window).on("orientationchange",function(){
-                                    if (window.orientation == 90 || window.orientation == -90) {
-                                        $('#orientLayer').hide();
-                                    }else if(window.orientation == 180 || window.orientation == 0) {
-                                        $('#orientLayer').show();
-                                    }
-                                });
-                            }
+                        //         $(window).on("orientationchange",function(){
+                        //             if (window.orientation == 90 || window.orientation == -90) {
+                        //                 $('#orientLayer').hide();
+                        //             }else if(window.orientation == 180 || window.orientation == 0) {
+                        //                 $('#orientLayer').show();
+                        //             }
+                        //         }); 
+                        //         // 下为横屏效果
+                        //     }else if(window.orientation == 180 || window.orientation == 0) {
+                        //         // 此为竖屏 
+                        //         $('#orientLayer').show();
+                        //         $(window).on("orientationchange",function(){
+                        //             if (window.orientation == 90 || window.orientation == -90) {
+                        //                 $('#orientLayer').hide();
+                        //             }else if(window.orientation == 180 || window.orientation == 0) {
+                        //                 $('#orientLayer').show();
+                        //             }
+                        //         });
+                        //     }
                            
-                        }
+                        // }
                         </script>
 <!-- 内容 -->
 <div class="dyw979_hl">
@@ -779,7 +779,7 @@ function SetHome(url){
 </div>
 <!-- 点击 -->
 <script>
-    if(deviceWidth>990){
+    if(deviceWidth>900){
         $('.dyw979_hl .but').on('click',function(e){
             e.preventDefault();
             $(this).hide();
@@ -814,12 +814,11 @@ function SetHome(url){
             location.reload();
         })
     }else{
-	    
         $('.dyw979_hl .but').on('click',function(e){
             e.preventDefault();
             $(this).hide();
             $('.dyw979_jh').show();        
-            $('.bg_bottom_owner').css('background','url(css/img/dyw979_bg_2.jpg) no-repeat top center').css('background-size','100%')
+            $('.bg_bottom_owner').css('background','url(css/img/dyw979_bg_2.jpg) no-repeat center center').css('background-size','100%')
         })
         // $('.dyw979_hl .but').on('mousedown',function (params) {
         //     console.log(1)
@@ -864,10 +863,6 @@ function SetHome(url){
             e.preventDefault()
             location.reload();
         })
-	    
-	    alert($(document).height())
-	    alert( window.screen.height)
-	    alert($('.bg_top_owner').css('height'))
     }
    
 </script>
