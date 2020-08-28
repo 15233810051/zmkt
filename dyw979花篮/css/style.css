@@ -294,7 +294,6 @@ a:hover{text-decoration: none}
 
     /* 背景 */
     html{
-	    margin-top:-.2rem;
         overflow: hidden;
     }
 .bg_top_owner{
@@ -306,7 +305,7 @@ a:hover{text-decoration: none}
     width:13.34rem;
     height:6.36rem;
     /* 2222 */
-    margin:-.2rem auto 0;
+    margin:-.4rem auto 0;
 }
 /* button */
 .dyw979_hl .but{
@@ -348,7 +347,7 @@ a:hover{text-decoration: none}
     background:url(img/dyw979_zd.png) no-repeat center center;
     background-size: 90%;
     position: relative;
-    top: 0.4rem;
+    top: 0.54rem;
     animation: rotatio infinite 1.5s ease-in-out;
 }
 .dyw979_hl .dyw979_jh .lj{
