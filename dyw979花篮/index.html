@@ -767,6 +767,8 @@ function SetHome(url){
         <div class="zd"></div>
         <div class="lj"></div>
         <div class="hl"></div>
+        <!--  -->
+        <div class="wz">向上拖动敬献花篮</div>
     </div>
     <!-- 弹窗 -->
     <div class="dyw979_tc">
@@ -850,9 +852,9 @@ function SetHome(url){
         })
         $('.dyw979_hl').on('vmouseup',function(e){
             // e.preventDefault();
-            $('.dyw979_hl .dyw979_jh .lj').css('width','0.11rem');
+            $('.dyw979_hl .dyw979_jh .lj').css('width','0.1rem');
             $(document).off('mousemove','.dyw979_jh' )
-            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-$('.dyw979_hl .dyw979_jh .lj').height()-$('.dyw979_hl .dyw979_jh .zd').height() && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-$('.dyw979_hl .dyw979_jh .lj').height()){
+            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-$('.dyw979_hl .dyw979_jh .lj').height()-$('.dyw979_hl .dyw979_jh .zd').height() && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-$('.dyw979_hl .dyw979_jh .lj').height()-20){
                 $('.dyw979_tc').show()
             }else{
                 $('.dyw979_hl .dyw979_jh .hl').css('top','0.7rem')
@@ -863,8 +865,12 @@ function SetHome(url){
             e.preventDefault()
             location.reload();
         })
-	    
-	    document.addEventListener('touchmove', function (event) {
+
+//         document.addEventListener('touchmove', function (event) {
+//     event.preventDefault();
+// }, false);
+
+document.addEventListener('touchmove', function (event) {
     window.event.returnValue = false;
 }, false);
     }
