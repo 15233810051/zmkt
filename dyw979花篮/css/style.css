@@ -294,6 +294,7 @@ a:hover{text-decoration: none}
 
     /* 背景 */
     html{
+	    margin-top:-.2rem;
         overflow: hidden;
     }
 .bg_top_owner{
@@ -343,7 +344,7 @@ a:hover{text-decoration: none}
 .dyw979_hl .dyw979_jh .zd{
     width: 1.78rem;
     height: 1.78rem;
-    margin:-.1rem auto 0;
+    margin:0rem auto 0;
     background:url(img/dyw979_zd.png) no-repeat center center;
     background-size: 90%;
     position: relative;
