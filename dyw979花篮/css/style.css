@@ -195,7 +195,7 @@ a:hover{text-decoration: none}
     transition:all 1.2s;
 }
 .dyw979_hl .dyw979_jh .hl_t{
-    top:-270px
+    animation: rotat 1 1.3s linear normal;
 }
 /* 弹窗 */
 .dyw979_tc{
@@ -249,7 +249,23 @@ a:hover{text-decoration: none}
     }
 }
 
-
+@keyframes rotat{
+    20%{
+        top: -10px;
+    }
+    40% {
+        top:-70px;
+    }
+    60% {
+        top: -140px;
+    }
+    80% {
+        top: -200px;
+    }
+    100% {
+        top:-260px;
+    }
+}
 
 
 
@@ -360,7 +376,28 @@ html{
     cursor: pointer;
 }
 .dyw979_hl .dyw979_jh .hl_t{
-    top:-2.3rem
+    animation: rotat 1 1.2s linear normal;
+}
+
+@keyframes rotat{
+    10%{
+        top:.7rem
+    }
+    20%{
+        top: .4rem;
+    }
+    40% {
+        top:-.8rem;
+    }
+    60% {
+        top: -1.4rem;
+    }
+    80% {
+        top:-2rem;
+    }
+    100% {
+        top:-2.4rem;
+    }
 }
 /* 弹窗 */
 .dyw979_tc{
