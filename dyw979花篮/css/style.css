@@ -196,6 +196,8 @@ a:hover{text-decoration: none}
 }
 .dyw979_hl .dyw979_jh .hl_t{
     animation: rotat 1 1.3s linear normal;
+    animation-delay:.5s;
+    animation-fill-mode:forwards;
 }
 /* 弹窗 */
 .dyw979_tc{
@@ -376,24 +378,26 @@ html{
     cursor: pointer;
 }
 .dyw979_hl .dyw979_jh .hl_t{
-    animation: rotat 1 1.2s linear normal;
+    animation: rotat 1 1.3s linear normal;
+    animation-delay:.5s;
+    animation-fill-mode:forwards;
 }
 
 @keyframes rotat{
     10%{
-        top:.7rem
+        top:.66rem
     }
     20%{
-        top: .4rem;
+        top: 0.32rem;
     }
     40% {
-        top:-.8rem;
+        top:-.36rem;
     }
     60% {
-        top: -1.4rem;
+        top: -1.04rem;
     }
     80% {
-        top:-2rem;
+        top:-1.72rem;
     }
     100% {
         top:-2.4rem;
