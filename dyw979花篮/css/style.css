@@ -174,6 +174,7 @@ a:hover{text-decoration: none}
     background:url(img/dyw979_zd.png) no-repeat center center;
     position: relative;
     top: 50px;
+    animation: rotatio infinite 1s linear alternate;
 }
 .dyw979_hl .dyw979_jh .lj{
     height: 110px;
@@ -189,22 +190,12 @@ a:hover{text-decoration: none}
     margin: 0 auto;
     background:url(img/dyw979_hl.png) no-repeat center center;
     position: relative;
-    top: 50px;
+    top: 49px;
     cursor: pointer;
+    transition:all 1.2s;
 }
-.dyw979_hl .dyw979_jh .wz{
-    width: 274px;
-    height: 43px;
-    position: relative;
-    background: rgba(209,21,21,.5);
-    background-size:200%;
-    text-align: center;
-    font: 28px '微软雅黑';
-    line-height: 40px;
-    color:#fff;
-    top: -260px;
-    left: 720px;
-    border-radius: 10px;
+.dyw979_hl .dyw979_jh .hl_t{
+    top:-270px
 }
 /* 弹窗 */
 .dyw979_tc{
@@ -240,7 +231,23 @@ a:hover{text-decoration: none}
     margin-top: 25px;
 }
 
-
+@keyframes rotatio{
+    10%{
+        background-size: 100%;
+    }
+    50% {
+        background-size: 98%;
+    }
+    60% {
+        background-size: 96%;
+    }
+    90% {
+        background-size: 94%;
+    }
+    100% {
+        background-size: 92%;
+    }
+}
 
 
 
@@ -293,17 +300,17 @@ a:hover{text-decoration: none}
 
 
     /* 背景 */
-    html{
-        overflow: hidden;
-    }
+html{
+    overflow: hidden;
+}
 .bg_top_owner{
     background:url(img/dyw979_bg_1.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    background-size: 100% ;
 }
 /* 主体 */
 .dyw979_hl{
     width:13.34rem;
-    height:6.36rem;
+    height:6.44rem;
     /* 2222 */
     margin:-.4rem auto 0;
 }
@@ -323,23 +330,7 @@ a:hover{text-decoration: none}
 .dyw979_hl .dyw979_jh{
     display: none;
 }
-@keyframes rotatio{
-    10%{
-        background-size: 90%;
-    }
-    50% {
-        background-size: 95%;
-    }
-    60% {
-        background-size: 100%;
-    }
-    90% {
-        background-size: 95%;
-    }
-    100% {
-        background-size: 90%;
-    }
-}
+
 .dyw979_hl .dyw979_jh .zd{
     width: 1.78rem;
     height: 1.78rem;
@@ -348,7 +339,6 @@ a:hover{text-decoration: none}
     background-size: 90%;
     position: relative;
     top: 0.59rem;
-    animation: rotatio infinite 1.5s ease-in-out;
 }
 .dyw979_hl .dyw979_jh .lj{
     height: 1rem;
@@ -369,19 +359,8 @@ a:hover{text-decoration: none}
     top: 1rem;
     cursor: pointer;
 }
-.dyw979_hl .dyw979_jh .wz{
-    width: 2.74rem;
-    height:.43rem;
-    position: relative;
-    background: rgba(209,21,21,.5);
-    background-size:200%;
-    text-align: center;
-    font: 0.28rem '微软雅黑';
-    line-height: .4rem;
-    color:#fff;
-    top: -2.6rem;
-    left:7.2rem;
-    border-radius: .1rem;
+.dyw979_hl .dyw979_jh .hl_t{
+    top:-2.3rem
 }
 /* 弹窗 */
 .dyw979_tc{

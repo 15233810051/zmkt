@@ -8,13 +8,13 @@
     <script type="text/javascript" src="http://r.img.cctvpic.com/photoAlbum/templet/js/jquery-1.7.2.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <!-- meta使用viewport以确保页面可自由缩放 -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- 引入 jQuery Mobile 样式 -->
-<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
 <!-- 引入 jQuery 库 -->
 <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <!-- 引入 jQuery Mobile 库 -->
-<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 	<script type="text/javascript">
 	  var deviceWidth = document.documentElement.clientWidth;
 	  if(deviceWidth>900){
@@ -215,7 +215,7 @@ a.down_img:hover{color: #c12125;}
 	</div>
 </div>
 <script type="text/javascript">
-<!--
+// <!--
 if (typeof window.jQuery == 'undefined') {
     var JS = document.createElement("script");
     JS.type = "text/javascript";
@@ -768,7 +768,7 @@ function SetHome(url){
         <div class="lj"></div>
         <div class="hl"></div>
         <!--  -->
-        <div class="wz">向上拖动敬献花篮</div>
+        <!-- <div class="wz">向上拖动敬献花篮</div> -->
     </div>
     <!-- 弹窗 -->
     <div class="dyw979_tc">
@@ -787,28 +787,15 @@ function SetHome(url){
             $(this).hide();
             $('.dyw979_jh').show();        
             $('.bg_bottom_owner').css('background','url(css/img/dyw979_bg_2.jpg) no-repeat top center')
-        })
-        // 移动花篮
-        $('.dyw979_hl .dyw979_jh .hl').on('mousedown',function(e){
-            e.preventDefault();
-            var dyw980_y=e.screenY-50;
-            $('.dyw979_hl .dyw979_jh .lj').css('width','0');
-            $(document).on('mousemove','.dyw979_jh',function(e){
-                e.preventDefault();
-                if(e.screenY-dyw980_y<50&&e.screenY-dyw980_y>-290){
-                    $('.dyw979_hl .dyw979_jh .hl').css('top',e.screenY-dyw980_y+'px')
-                }
-            })
-        })
-        $('.dyw979_hl').on('mouseup',function(e){
-            e.preventDefault();
-            $('.dyw979_hl .dyw979_jh .lj').css('width','14px');
-            $(document).off('mousemove','.dyw979_jh' )
-            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-300 && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-190){
+            // 花篮
+            
+            setTimeout(function(){
+                $('.dyw979_hl .dyw979_jh .lj').css('width','0');
+            },300)
+            $('.dyw979_hl .dyw979_jh .hl').addClass('hl_t')
+            setTimeout(function(){
                 $('.dyw979_tc').show()
-            }else{
-                $('.dyw979_hl .dyw979_jh .hl').css('top','50px')
-            }
+            },1200)
         })
         // 返回 查看
         $('.dyw979_tc .tc .fh').on('click',function(e){
@@ -821,45 +808,16 @@ function SetHome(url){
             $(this).hide();
             $('.dyw979_jh').show();        
             $('.bg_bottom_owner').css('background','url(css/img/dyw979_bg_2.jpg) no-repeat center center').css('background-size','100%')
-        })
-        // $('.dyw979_hl .but').on('mousedown',function (params) {
-        //     console.log(1)
-        // })
-        // $('.dyw979_hl .but').on('mouseenter',function (params) {
-        //     console.log(1)
-        // })
-        // $('.dyw979_hl .but').on('mouseleave',function (params) {
-        //     console.log(1)
-        // })
-        // $('.dyw979_hl .but').on('mouseup',function (params) {
-        //     console.log(1)
-        // })
-        // $('.dyw979_hl .but').on('mouseover',function (params) {
-        //     console.log(1)
-        // })
-        // 移动花篮
-        $('.dyw979_hl .dyw979_jh').on('vmousedown',function(e){
-            // e.preventDefault();
-            var dyw980_y=e.screenY-50,dyw980_ydy=parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'));
-            $('.dyw979_hl .dyw979_jh .lj').css('width','0');
-            $(document).on('vmousemove','.dyw979_jh',function(e){
-            // console.log(1,dyw980_ydy);
-                // e.preventDefault();
-                if(e.screenY-dyw980_y<dyw980_ydy&&e.screenY-dyw980_y>-$('.dyw979_hl .dyw979_jh .lj').height()*0.8-$('.dyw979_hl .dyw979_jh .zd').height()){
-                    $('.dyw979_hl .dyw979_jh .hl').css('top',e.screenY-dyw980_y+'px')
-                }
-            })
-        })
-        $('.dyw979_hl').on('vmouseup',function(e){
-            // e.preventDefault();
-            $('.dyw979_hl .dyw979_jh .lj').css('width','0.1rem');
-            $(document).off('mousemove','.dyw979_jh' )
-            if(parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))>-$('.dyw979_hl .dyw979_jh .lj').height()-$('.dyw979_hl .dyw979_jh .zd').height() && parseInt($('.dyw979_hl .dyw979_jh .hl').css('top'))<-$('.dyw979_hl .dyw979_jh .lj').height()-20){
+            
+            setTimeout(function(){
+                $('.dyw979_hl .dyw979_jh .lj').css('width','0');
+            },300)
+            $('.dyw979_hl .dyw979_jh .hl').addClass('hl_t')
+            setTimeout(function(){
                 $('.dyw979_tc').show()
-            }else{
-                $('.dyw979_hl .dyw979_jh .hl').css('top','0.7rem')
-            }
+            },1200)
         })
+
         // 返回 查看
         $('.dyw979_tc .tc .fh').on('click',function(e){
             e.preventDefault()
@@ -870,9 +828,9 @@ function SetHome(url){
 //     event.preventDefault();
 // }, false);
 
-document.addEventListener('touchmove', function (event) {
-    window.event.returnValue = false;
-}, false);
+// document.addEventListener('touchmove', function (event) {
+//     window.event.returnValue = false;
+// }, false);
     }
    
 </script>
